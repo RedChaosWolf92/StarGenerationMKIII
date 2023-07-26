@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://declqlmsig8sd"]
+
+[ext_resource type="Texture2D" uid="uid://7f04p5pg68f1" path="res://Sprites/RedGiant.png" id="1_hvitx"]
+[ext_resource type="Script" path="res://Galaxy/Stars/Star_List/red_giant.gd" id="1_jn3kg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wht7g"]
+radius = 110.0
+
+[node name="Red_Giant" type="StaticBody2D"]
+script = ExtResource("1_jn3kg")
+metadata/_edit_lock_ = true
+
+[node name="RedGiantImage" type="Sprite2D" parent="."]
+texture = ExtResource("1_hvitx")
+
+[node name="RG_Radius" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_wht7g")

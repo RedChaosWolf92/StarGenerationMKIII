@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1y8sxc3e6hqu"]
+
+[ext_resource type="PackedScene" uid="uid://068io0o7p4n7" path="res://Galaxy/Stars/Star_List/blue_giant.tscn" id="2_wd5ah"]
+[ext_resource type="PackedScene" uid="uid://declqlmsig8sd" path="res://Galaxy/Stars/Star_List/red_giant.tscn" id="3_og7yt"]
+
+[node name="StarTemplate" type="Node2D"]
+
+[node name="Blue_Giant" parent="." instance=ExtResource("2_wd5ah")]
+position = Vector2(170, 387)
+
+[node name="Red_Giant" parent="." instance=ExtResource("3_og7yt")]
+position = Vector2(153, 97)
