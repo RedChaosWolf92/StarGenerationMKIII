@@ -1,10 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://3rxgw3w3gh0s"]
+[gd_scene load_steps=2 format=3 uid="uid://3rxgw3w3gh0s"]
 
 [ext_resource type="Script" path="res://Galaxy/Star_Arm.gd" id="1_a8eqb"]
-[ext_resource type="Script" path="res://Galaxy/Practice.gd" id="2_ld1gc"]
 
 [node name="Star_Arm" type="Node2D"]
 script = ExtResource("1_a8eqb")
-
-[node name="Practice" type="Camera2D" parent="."]
-script = ExtResource("2_ld1gc")

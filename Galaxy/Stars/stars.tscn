@@ -1,0 +1,15 @@
+[gd_scene load_steps=5 format=3 uid="uid://cqyx05ly2qbn4"]
+
+[ext_resource type="PackedScene" uid="uid://d1y8sxc3e6hqu" path="res://Galaxy/Stars/star_template.tscn" id="1_cj4jn"]
+[ext_resource type="Script" path="res://Galaxy/Stars/stars.gd" id="1_spw4o"]
+[ext_resource type="PackedScene" uid="uid://3rxgw3w3gh0s" path="res://Galaxy/star_arm.tscn" id="2_lwhsn"]
+[ext_resource type="PackedScene" uid="uid://blvmapdpioc06" path="res://Galaxy/practice.tscn" id="3_g7saa"]
+
+[node name="Stars" type="Node2D"]
+script = ExtResource("1_spw4o")
+
+[node name="StarTemplate" parent="." instance=ExtResource("1_cj4jn")]
+
+[node name="Star_Arm" parent="." instance=ExtResource("2_lwhsn")]
+
+[node name="Practice" parent="." instance=ExtResource("3_g7saa")]

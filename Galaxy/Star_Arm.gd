@@ -13,16 +13,10 @@ var curve = Curve2D.new() # Create a new Curve2D object
 var theta_current: float = theta_start  # The current theta value
 var counter = 0 # counter for frame skipping
 
-@onready var camera = $Practice
-
 var canvas_item = RID()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	#initialize the camera
-	camera.global_position = Vector2(0, 0)
-	camera.scale = Vector2(0.5,0.5)
-
 	canvas_item = RenderingServer.canvas_item_create()
 	RenderingServer.canvas_item_set_parent(canvas_item, get_canvas_item())
 	
@@ -36,12 +30,6 @@ func _physics_process(delta):
 	counter += 1
 	if counter % SKIP_FRAME == 0:
 		spiral_arm() # reduce delta by half
-
-	
-
-# Draw the curve using lines between each point
-func _draw():
-	pass
 
 #func for handling the curve generation and drawing
 func spiral_arm():
