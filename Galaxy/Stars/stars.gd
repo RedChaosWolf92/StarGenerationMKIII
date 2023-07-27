@@ -83,12 +83,13 @@ func apply_collision_avoidance():
 				if star == other:
 					continue
 
-					var dir = star.global_position - other.global_position
-					var dist = dir.length()
+				var dir = star.global_position - other.global_position
+				var dist = dir.length()
 
-					var safe_dist = star.safeDisfromOthers + other.safeDisfromOthers
-					if dist < safe_dist:
-						force += (dir.normalized() / (safe_dist * dist)) * REPEAL_FORCE
+				var safe_dist = star.safeDisfromOthers + other.safeDisfromOthers
+				if dist < safe_dist:
+					force += (dir.normalized() / (safe_dist * dist)) * REPEAL_FORCE
+					
 			if force.length() > 0:
 				has_moved = true
 				star.global_position += force.normalized() * REPEAL_FORCE
