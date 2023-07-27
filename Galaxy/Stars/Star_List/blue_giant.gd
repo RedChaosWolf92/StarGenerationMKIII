@@ -27,7 +27,7 @@ func generate_BlueGiant():
 	var BlueGiantSize = $BlueGiantImage.scale
 	var BlueGiantRad = $BG_Radius.shape.radius
 	var BlueGiantRadSize = $BG_Radius.scale
-	size = snappedf(randf_range(1.95, 5.05), .001)
+	size = snappedf(randf_range(0.75,1.05), .001)
 	
 	BlueGiantSize = Vector2(size,size)
 	print("Size ", BlueGiantSize)

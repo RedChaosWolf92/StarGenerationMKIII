@@ -27,7 +27,7 @@ func generate_RedGiant():
 	var RedGiantSize = $RedGiantImage.scale
 	var RedGiantRad = $RG_Radius.shape.radius
 	var RedGiantRadSize = $RG_Radius.scale
-	size = snappedf(randf_range(1.95, 3.05), .001)
+	size = snappedf(randf_range(0.5,0.95), .001)
 	
 	RedGiantSize = Vector2(size,size)
 	print("Size ", RedGiantSize)
